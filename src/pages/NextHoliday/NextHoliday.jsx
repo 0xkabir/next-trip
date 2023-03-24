@@ -1,10 +1,8 @@
 import React from "react";
-import img from "../../assets/images/beach.jpg";
-import img2 from "../../assets/images/bot.jpg";
+// import img from "../../assets/images/beach.jpg";
+// import img2 from "../../assets/images/bot.jpg";
 import img3 from "../../assets/images/city6.jpg";
-//style={{backgroundImage: `url(${img})`}}
-//min-h-screen
-//max-w-lg className="w-full h-48 bg-no-repeat bg-cover"  
+
 const NextHoliday = () => {
 	return (
 		<div className="hero h-96 bg-no-repeat bg-cover w-full"  style={{ backgroundImage: `url(${img3})`, }}>
