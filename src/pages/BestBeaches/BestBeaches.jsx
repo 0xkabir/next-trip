@@ -3,7 +3,7 @@ import React from "react";
 import img from "../../assets/images/beach.jpg";
 const BestBeaches = () => {
 	return (
-		<div className="my-14">
+		<div className="my-10">
 			<div className="hero">
 				<div className="hero-content flex-col lg:flex-row-reverse">
 					<div className="w-1/2">
