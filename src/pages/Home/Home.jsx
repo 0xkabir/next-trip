@@ -1,8 +1,11 @@
 import React from 'react';
-import EventsTourCard from '../../components/Cards/EventsTourCard';
 import CategorySection from '../CategorySection/CategorySection';
 import DiscoverSection from '../DiscoverSection/DiscoverSection';
+import BestBeaches from '../BestBeaches/BestBeaches';
 import NextHoliday from '../NextHoliday/NextHoliday';
+import WorldTour from '../WorldTour/WorldTour';
+import OurBestPackagesHome from '../OurBestPackagesHome/OurBestPackagesHome';
+import NextFooter from '../../components/shared/NextFooter';
 
 const Home = () => {
     return (
@@ -13,8 +16,14 @@ const Home = () => {
             <NextHoliday></NextHoliday>
             {/* Discover Section */}
             <DiscoverSection />
-            {/* Event Tour Card */}\
-            <EventsTourCard />
+            {/* Showoff Video Section */}\
+            <BestBeaches></BestBeaches>
+            {/* <WorldTour></WorldTour> */}
+            <WorldTour />
+            {/* Our Best Packages Home */}\
+            <OurBestPackagesHome />
+            {/* Footer Section */}
+            {/* <NextFooter /> */}
         </div>
     );
 };
