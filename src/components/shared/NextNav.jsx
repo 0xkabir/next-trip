@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NextNav = () => {
   return (
-    <div className="absolute top-0 z-10 navbar bg-transparent lg:justify-between">
+    <div className="absolute top-0 z-10 navbar bg-white opacity-60 lg:justify-between">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -51,7 +51,7 @@ const NextNav = () => {
         </div>
         <NavLink
           to="/"
-          className="btn btn-ghost normal-case text-xl text-primary"
+          className="btn btn-ghost normal-case text-xl text-primary font-bold"
         >
           NextTrip
         </NavLink>
