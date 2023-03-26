@@ -1,15 +1,15 @@
 import React from "react";
-
 import img from "../../assets/images/beach.jpg";
+
+
 const BestBeaches = () => {
 	return (
-		<div className="my-10">
+		<div className="pb-16">
 			<div className="hero">
 				<div className="hero-content flex-col lg:flex-row-reverse">
-					<div className="lg:w-1/2 sm:w-52 sm:h-52">
+					<div className="lg:w-1/2 mt-[-60px] sm:w-52 sm:h-52">
 						<iframe
-
-							width="560"
+							width="auto"
 							height="315"
 							src="https://www.youtube.com/embed/5gOwRpgdzEE"
 							title="YouTube video player"
@@ -20,7 +20,7 @@ const BestBeaches = () => {
 
 						{/* <img src={img} className="rounded-lg shadow-2xl" /> */}
 					</div>
-					<div className="w-1/2">
+					<div className="lg:w-1/2 md:w-1/2 w-[90%]">
 						<h1 className="text-5xl font-bold">The Best Beaches</h1>
 						<p className="py-6">
 							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
