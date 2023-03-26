@@ -16,12 +16,12 @@ const Home = () => {
             <CategorySection />
             {/* <h1>This is Home Page</h1> */}
             <NextHoliday></NextHoliday>
-            {/* Discover Section */}
-            <DiscoverSection />
             {/* Showoff Video Section */}\
             <BestBeaches></BestBeaches>
             {/* <WorldTour></WorldTour> */}
             <WorldTour />
+            {/* Discover Section */}
+            <DiscoverSection />
             {/* Our Best Packages Home */}\
             <OurBestPackagesHome />
         </div>
