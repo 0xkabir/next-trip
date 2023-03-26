@@ -22,7 +22,7 @@ const Slider = () => {
       <Slide
         label="Hallstatt - Austria"
         background={{
-          backgroundImageSrc: 'https://tourscanner.com/blog/wp-content/uploads/2022/07/things-to-do-in-Cappadocia-Turkey.jpg',
+          backgroundImageSrc: 'https://images.unsplash.com/photo-1591448764624-d7973a442bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FwcGFkb2NpYSUyMHR1cmtleXxlbnwwfHwwfHw%3D&w=1000&q=80',
           backgroundAnimation: 'zoom'
         }}
       />
