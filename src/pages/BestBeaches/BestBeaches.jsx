@@ -1,7 +1,7 @@
 import React from "react";
 const BestBeaches = () => {
 	return (
-		<div className="py-12 md:py-16">
+		<div className="py-16">
 			<div className="hero">
 				<div className="hero-content flex-col lg:flex-row-reverse">
 					<div className="lg:w-1/2 mt-[-60px] hidden lg:block">
