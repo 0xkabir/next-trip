@@ -6,7 +6,7 @@ const CategorySection = () => {
         <div>
             <div className='mx-auto w-[80%] text-center'>
                 <div>
-                    <p className='text-gray-500 mb-4'>OUR PROPOSALS</p>
+                    <p className='text-gray-500 mt-16 mb-4'>OUR PROPOSALS</p>
                     <h2 className='text-gray-700 text-4xl font-bold capitalize'>OUR DESTINATIONS</h2>
                 </div>
             </div>

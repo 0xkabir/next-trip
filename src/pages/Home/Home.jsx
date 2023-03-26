@@ -5,13 +5,13 @@ import BestBeaches from '../BestBeaches/BestBeaches';
 import NextHoliday from '../NextHoliday/NextHoliday';
 import WorldTour from '../WorldTour/WorldTour';
 import OurBestPackagesHome from '../OurBestPackagesHome/OurBestPackagesHome';
-// import Slider from './Slider';
+import Slider from './Slider';
 
 const Home = () => {
     return (
         <div>
             {/* Slider Section */}
-            {/* <Slider /> */}
+            <Slider />
             {/* Categories */}
             <CategorySection />
             {/* <h1>This is Home Page</h1> */}
@@ -23,6 +23,13 @@ const Home = () => {
             {/* <WorldTour></WorldTour> */}
             <WorldTour />
             {/* Our Best Packages Home */}
+            {/* Showoff Video Section */}\
+            <BestBeaches></BestBeaches>
+            {/* <WorldTour></WorldTour> */}
+            <WorldTour />
+            {/* Discover Section */}
+            <DiscoverSection />
+            {/* Our Best Packages Home */}\
             <OurBestPackagesHome />
         </div>
     );
