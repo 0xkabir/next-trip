@@ -1,24 +1,30 @@
 import React from "react";
-import img from "../../assets/images/beach.jpg";
-
-
 const BestBeaches = () => {
 	return (
-		<div className="pb-16">
+		<div className="py-16">
 			<div className="hero">
 				<div className="hero-content flex-col lg:flex-row-reverse">
-					<div className="lg:w-1/2 mt-[-60px] sm:w-52 sm:h-52">
+					<div className="lg:w-1/2 mt-[-60px] hidden lg:block">
 						<iframe
-							width="auto"
+							width="560"
 							height="315"
 							src="https://www.youtube.com/embed/5gOwRpgdzEE"
 							title="YouTube video player"
-							frameborder="0"
+							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen
+							allowFullScreen
 						></iframe>
-
-						{/* <img src={img} className="rounded-lg shadow-2xl" /> */}
+					</div>
+					<div className="lg:hidden mt-[-60px]">
+						<iframe
+							width="320"
+							height="auto"
+							src="https://www.youtube.com/embed/5gOwRpgdzEE"
+							title="YouTube video player"
+							frameBorder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowFullScreen
+						></iframe>
 					</div>
 					<div className="lg:w-1/2 md:w-1/2 w-[90%]">
 						<h1 className="text-5xl font-bold">The Best Beaches</h1>

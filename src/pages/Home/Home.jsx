@@ -16,20 +16,15 @@ const Home = () => {
             <CategorySection />
             {/* <h1>This is Home Page</h1> */}
             <NextHoliday></NextHoliday>
-            {/* Discover Section */}
-            <DiscoverSection />
+
             {/* Showoff Video Section */}
             <BestBeaches></BestBeaches>
             {/* <WorldTour></WorldTour> */}
-            <WorldTour />
-            {/* Our Best Packages Home */}
-            {/* Showoff Video Section */}\
-            <BestBeaches></BestBeaches>
-            {/* <WorldTour></WorldTour> */}
-            <WorldTour />
+            <WorldTour /> 
+            
             {/* Discover Section */}
             <DiscoverSection />
-            {/* Our Best Packages Home */}\
+            {/* Our Best Packages Home */}
             <OurBestPackagesHome />
         </div>
     );
