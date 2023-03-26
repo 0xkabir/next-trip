@@ -25,7 +25,7 @@ const NextNav = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content gap-y-2 mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content gap-y-2 mt-3 p-2 opacity-90 shadow bg-base-100 rounded-box w-52"
           >
             <li>
               <NavLink to="/home" className="rounded-md py-1.5">
