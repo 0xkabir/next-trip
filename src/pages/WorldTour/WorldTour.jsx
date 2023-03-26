@@ -2,23 +2,6 @@ import React from "react";
 
 const WorldTour = () => {
 	return (
-<<<<<<< HEAD
-		<div className="w-4/5 mx-auto mt-20 mb-10">
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-			<div className="bg-white rounded-md">
-				<div className="card-body">
-					<div className="flex">
-						<div>
-                            <GiWorld className="text-5xl mr-3 mt-3 text-slate-400"/>
-                        </div>
-						<div>
-							<h2 className="card-title text-3xl py-3">World Tour</h2>
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-								Similique, perferendis.
-							</p>
-							
-=======
 		<div className="lg:w-[80%] w-[90%] mx-auto my-5">
 			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
 				<div className="bg-white rounded-md">
@@ -35,7 +18,6 @@ const WorldTour = () => {
 								</p>
 
 							</div>
->>>>>>> ecef571acb8e5575391a1ba342a02d8d8b5994e1
 						</div>
 					</div>
 				</div>
