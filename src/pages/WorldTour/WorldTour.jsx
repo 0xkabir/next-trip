@@ -1,5 +1,4 @@
 import React from "react";
-// import { GiWorld, GiCruiser, GiTowerBridge } from 'react-icons/gi';
 
 const WorldTour = () => {
 	return (

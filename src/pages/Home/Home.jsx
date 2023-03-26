@@ -5,11 +5,13 @@ import BestBeaches from '../BestBeaches/BestBeaches';
 import NextHoliday from '../NextHoliday/NextHoliday';
 import WorldTour from '../WorldTour/WorldTour';
 import OurBestPackagesHome from '../OurBestPackagesHome/OurBestPackagesHome';
-import NextFooter from '../../components/shared/NextFooter';
+// import Slider from './Slider';
 
 const Home = () => {
     return (
         <div>
+            {/* Slider Section */}
+            {/* <Slider /> */}
             {/* Categories */}
             <CategorySection />
             {/* <h1>This is Home Page</h1> */}
@@ -22,8 +24,6 @@ const Home = () => {
             <WorldTour />
             {/* Our Best Packages Home */}\
             <OurBestPackagesHome />
-            {/* Footer Section */}
-            {/* <NextFooter /> */}
         </div>
     );
 };

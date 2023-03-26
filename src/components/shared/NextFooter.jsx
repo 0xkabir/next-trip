@@ -11,7 +11,7 @@ const NextFooter = () => {
                     <h2 className='text-gray-700 text-4xl font-bold'>Travel With Us</h2>
                 </div>
                 <div className='mt-10'>
-                    <input className='bg-white py-3 px-16 rounded-full text-center' type="text" placeholder='Type your message...' />
+                    <input className='bg-white py-3 px-12 rounded-full text-center' type="text" placeholder='Type your message...' />
                     <button className='bg-cyan-400 py-3 px-8 md:ml-4 mt-4 lg:mt-0 mx-auto rounded-full text-white'>Send</button>
                 </div>
             </div>
