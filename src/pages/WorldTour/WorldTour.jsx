@@ -3,7 +3,7 @@ import { GiWorld,GiCruiser ,GiTowerBridge} from 'react-icons/gi';
 
 const WorldTour = () => {
 	return (
-		<div className="w-4/5 mx-auto my-5">
+		<div className="w-4/5 mx-auto my-10">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
 			<div className="bg-white rounded-md">
 				<div className="card-body">
