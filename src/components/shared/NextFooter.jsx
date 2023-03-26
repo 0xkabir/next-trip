@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from '../../assets/images/Logo.png';
-import bgImage from '../../assets/images/bot.jpg';
+
+const img = "https://www.gannett-cdn.com/media/2022/06/20/USATODAY/usatsports/of-Parks--Recreation-and-Historic-Preservation.jpg";
 
 const NextFooter = () => {
     return (
-        <footer style={{ backgroundImage: `url(${bgImage})`, }} className="px-4 divide-y bg-[aliceblue] mt-10 py-10">
+        <footer style={{ backgroundImage: `url(${img})`, }} className="px-4 divide-y bg-[aliceblue] mt-10 py-10">
             <div className='py-10 flex flex-wrap justify-between mx-auto w-[80%] lg:text-center'>
                 <div>
-                    <p className='text-gray-500 mb-4'>Keep In Touch</p>
-                    <h2 className='text-gray-700 text-4xl font-bold'>Travel With Us</h2>
+                    <p className='text-white mb-4'>Keep In Touch</p>
+                    <h2 className='text-white text-4xl font-bold'>Travel With Us</h2>
                 </div>
                 <div className='mt-10'>
                     <input className='bg-white py-3 px-12 rounded-full text-center' type="text" placeholder='Type your message...' />
