@@ -18,11 +18,11 @@ const Home = () => {
             <NextHoliday></NextHoliday>
             {/* Discover Section */}
             <DiscoverSection />
-            {/* Showoff Video Section */}\
+            {/* Showoff Video Section */}
             <BestBeaches></BestBeaches>
             {/* <WorldTour></WorldTour> */}
             <WorldTour />
-            {/* Our Best Packages Home */}\
+            {/* Our Best Packages Home */}
             <OurBestPackagesHome />
         </div>
     );
