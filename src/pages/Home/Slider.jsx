@@ -22,7 +22,7 @@ const Slider = () => {
       <Slide
         label="Hallstatt - Austria"
         background={{
-          backgroundImageSrc: image1,
+          backgroundImageSrc: 'https://tourscanner.com/blog/wp-content/uploads/2022/07/things-to-do-in-Cappadocia-Turkey.jpg',
           backgroundAnimation: 'zoom'
         }}
       />
@@ -30,7 +30,7 @@ const Slider = () => {
       <Slide
         label="Hvitserkur - Iceland"
         background={{
-          backgroundImageSrc: image2,
+          backgroundImageSrc: 'https://res.cloudinary.com/simpleview/image/upload/v1674650667/clients/norway/New_Project_11__28f603e7-fce9-4bb3-96ec-8500d66f86f1.jpg',
           backgroundAnimation: 'zoom'
         }}
       />
@@ -38,7 +38,7 @@ const Slider = () => {
       <Slide
         label="Jacksonville - USA"
         background={{
-          backgroundImageSrc: image3,
+          backgroundImageSrc: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Ankor_Wat_temple.jpg',
           backgroundAnimation: 'zoom'
         }}
       />
