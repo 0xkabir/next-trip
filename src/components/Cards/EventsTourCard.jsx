@@ -2,7 +2,7 @@ import React from 'react';
 
 const EventsTourCard = () => {
     return (
-        <div className="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 p-4">
+        <div className="w-full p-4">
             <a href="" className="c-card block bg-white shadow-md hover:shadow-xl rounded-lg overflow-hidden">
                 <div className="relative pb-48 overflow-hidden">
                     <img className="absolute inset-0 h-full w-full object-cover" src="https://landscapephotographymagazine.com/wp-content/uploads/2019/07/Antelope-Canyon-Arizona-USA-by-Craig-Bill.jpg" alt="" />
