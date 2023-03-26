@@ -4,7 +4,7 @@ import bgImage from '../../assets/images/bot.jpg';
 
 const NextFooter = () => {
     return (
-        <footer className="px-4 divide-y bg-[aliceblue] mt-10 py-10">
+        <footer style={{ backgroundImage: `url(${bgImage})`, }} className="px-4 divide-y bg-[aliceblue] mt-10 py-10">
             <div className='py-10 flex flex-wrap justify-between mx-auto w-[80%] lg:text-center'>
                 <div>
                     <p className='text-gray-500 mb-4'>Keep In Touch</p>
