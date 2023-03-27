@@ -21,8 +21,8 @@ const CategorySection = () => {
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
                                 <img className="object-center object-cover h-[400px] w-full" src="https://www.holidify.com/images/bgImages/BALI.jpg" alt="shoe-image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl'>Nature</h3>
-                                    <p className='text-lg'>6 Packages</p>
+                                    <h3 className='font-bold pb-1 text-2xl text-white'>Nature</h3>
+                                    <p className='text-lg text-white'>6 Packages</p>
                                 </div>
 
                                 {/* Hover Details */}
@@ -42,8 +42,8 @@ const CategorySection = () => {
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
                                 <img className="object-center object-cover h-[400px] w-full" src="https://guardian.ng/wp-content/uploads/2018/04/Photo_-Art-of-Safari.jpg" alt="watch-image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl'>Desert</h3>
-                                    <p className='text-lg'>2 Packages</p>
+                                    <h3 className='font-bold pb-1 text-2xl text-white'>Desert</h3>
+                                    <p className='text-lg text-white'>2 Packages</p>
                                 </div>
 
                                 {/* Hover Details */}
@@ -59,8 +59,8 @@ const CategorySection = () => {
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
                                 <img className="object-center object-cover h-[400px] w-full" src="https://www.deutschland.de/sites/default/files/media/image/AdobeStock_99698574.jpg" alt="watch-image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl'>Historical Places</h3>
-                                    <p className='text-lg'>3 Packages</p>
+                                    <h3 className='font-bold pb-1 text-2xl text-white'>Historical Places</h3>
+                                    <p className='text-lg text-white'>3 Packages</p>
                                 </div>
 
                                 {/* Hover Details */}
@@ -77,8 +77,8 @@ const CategorySection = () => {
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
                                 <img className="object-center object-cover h-[400px] w-full" src="https://www.holidify.com/images/bgImages/KOH-YAO-NOI.jpg" alt="shoe-image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl'>Islands</h3>
-                                    <p className='text-lg'>5 Packages</p>
+                                    <h3 className='font-bold pb-1 text-2xl text-white'>Islands</h3>
+                                    <p className='text-lg text-white'>5 Packages</p>
                                 </div>
 
                                 {/* Hover Details */}
@@ -97,8 +97,8 @@ const CategorySection = () => {
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
                                 <img className="object-center object-cover h-[400px] w-full" src="https://adventures.is/media/226921/anaconda-ice-cave-tunnel-vatnajokull.jpg" alt="watch-image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl'>Caves & Valleys</h3>
-                                    <p className='text-lg'>4 Packages</p>
+                                    <h3 className='font-bold pb-1 text-2xl text-white'>Caves & Valleys</h3>
+                                    <p className='text-lg text-white'>4 Packages</p>
                                 </div>
 
                                 {/* Hover Details */}
@@ -116,8 +116,8 @@ const CategorySection = () => {
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
                                 <img className="object-center object-cover h-[400px] w-full" src="https://res.cloudinary.com/simpleview/image/upload/v1674650667/clients/norway/New_Project_11__28f603e7-fce9-4bb3-96ec-8500d66f86f1.jpg" alt="shoe-image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl'>Water Falls</h3>
-                                    <p className='text-lg'>3 Packages</p>
+                                    <h3 className='font-bold pb-1 text-2xl text-white'>Water Falls</h3>
+                                    <p className='text-lg text-white'>3 Packages</p>
                                 </div>
 
                                 {/* Hover Details */}

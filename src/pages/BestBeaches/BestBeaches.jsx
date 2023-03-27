@@ -41,7 +41,7 @@ const BestBeaches = () => {
 							<span className="text-4xl ml-2"> 500 $</span>{" "}
 							<span>/For person</span>
 						</p>
-						<button className="btn border-0 px-10 bg-pink-500 rounded-full hover:bg-rose-400">Book Now</button>
+						<button className="btn border-0 px-10 bg-pink-400 rounded-full hover:bg-rose-400 text-white mt-5">Book Now</button>
 					</div>
 				</div>
 			</div>
