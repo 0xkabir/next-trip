@@ -3,18 +3,18 @@ import { Link } from 'react-router-dom';
 
 const CategorySection = () => {
     return (
-        <div>
+        <div className='p-8'>
             <div className='mx-auto w-[80%] text-center'>
                 <div>
                     <p className='text-gray-500 mt-16 mb-4'>OUR PROPOSALS</p>
-                    <h2 className='text-gray-700 text-4xl font-bold capitalize'>OUR DESTINATIONS</h2>
+                    <h2 className='text-gray-700 text-4xl font-bold capitalize my-4'>OUR <span className='underline text-cyan-500'>DESTINATIONS</span></h2>
                 </div>
             </div>
             <div className="flex justify-center items-center">
                 <div className="2xl:mx-auto 2xl:container pb-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
                     <div className="flex flex-col justify-center items-center space-y-6">
                         <div className="flex flex-col justify-center items-center ">
-                            <h1 className="text-3xl xl:text-4xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white">Shop By Category</h1>
+                            {/* <h1 className="text-3xl xl:text-3xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white my-4">Shop By Category</h1> */}
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 gap-6 w-full">
                             {/*Category Beach */}
