@@ -7,7 +7,7 @@ const Slider = () => {
   return (
     <section className="h-[80vh] pb-6 bg-blue-100 px-[8%] pt-[20vh] lg:pt-[20vh] text-center opacity-100" style={{ backgroundImage: `url(${img})`, backgroundSize: "scroll" }} >
 
-      <h1 className="text-3xl lg:text-5xl font-bold mb-2 bg-clip-text bg-gradient-to-r"><span className="text-white">Search your next</span> <span className="underline text-cyan-400"><span className="text-white">Holiday</span></span></h1>
+      <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold mb-2 bg-clip-text bg-gradient-to-r"><span className="text-white">Search your next</span> <span className="underline text-cyan-400"><span className="text-white">Holiday</span></span></h1>
 
       <p className="text-gray-700 my-8 text-white text-2xl">Check Our Best Deals...</p>
 
