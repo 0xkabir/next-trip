@@ -1,9 +1,8 @@
-import React from "react";
-import logo from "../../assets/images/Logo.png";
+import React from 'react';
+import logo from '../../assets/images/Logo.png';
 
-const img =
-	"https://www.gannett-cdn.com/media/2022/06/20/USATODAY/usatsports/of-Parks--Recreation-and-Historic-Preservation.jpg";
-//opacity: 0.8 opacity-50
+const img = "https://images.pexels.com/photos/2397649/pexels-photo-2397649.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+
 const NextFooter = () => {
 	return (
 		<footer

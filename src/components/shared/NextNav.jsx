@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NextNav = () => {
   return (
-    <div className="absolute top-0 z-10 navbar bg-white opacity-60 lg:justify-between">
+    <div className="absolute top-0 z-10 navbar bg-white opacity-90 md:opacity-80 lg:opacity-60 lg:justify-between">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,7 +25,7 @@ const NextNav = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content gap-y-2 mt-3 p-2 opacity-90 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content gap-y-2 mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
               <NavLink to="/home" className="rounded-md py-1.5">

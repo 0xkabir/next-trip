@@ -3,10 +3,10 @@ const BestBeaches = () => {
 	return (
 		<div className="py-16">
 			<div className="hero">
-				<div className="hero-content flex-col lg:flex-row-reverse">
-					<div className="lg:w-1/2 mt-[-60px] hidden lg:block">
+				<div className="hero-content mx-auto flex-col lg:flex-row-reverse">
+					<div className="lg:w-1/2 mt-[-60px] mx-auto hidden lg:block">
 						<iframe
-							width="560"
+							width="500"
 							height="315"
 							src="https://www.youtube.com/embed/5gOwRpgdzEE"
 							title="YouTube video player"
@@ -28,6 +28,8 @@ const BestBeaches = () => {
 					</div>
 					<div className="lg:w-1/2 md:w-1/2 w-[90%]">
 						<h1 className="text-5xl font-bold text-cyan-300">The Best Beaches</h1>
+					<div className="lg:w-1/2 md:w-1/2 w-[80%] pl-[10%]">
+						<h1 className="text-5xl font-bold">The Best Beaches</h1>
 						<p className="py-6">
 							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 							excepturi exercitationem quasi. In deleniti eaque aut repudiandae
@@ -41,7 +43,7 @@ const BestBeaches = () => {
 							<span className="text-4xl ml-2"> 500 $</span>{" "}
 							<span>/For person</span>
 						</p>
-						<button className="btn border-0 px-10 bg-pink-400 rounded-full hover:bg-rose-400 text-white mt-5">Book Now</button>
+						<button className="btn bg-pink-400 text-white border-none rounded-full">Book Now</button>
 					</div>
 				</div>
 			</div>
