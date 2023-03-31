@@ -27,7 +27,7 @@ const BestBeaches = () => {
 						></iframe>
 					</div>
 					<div className="lg:w-1/2 md:w-1/2 w-[90%]">
-						<h1 className="text-5xl font-bold">The Best Beaches</h1>
+						<h1 className="text-5xl font-bold text-cyan-300">The Best Beaches</h1>
 						<p className="py-6">
 							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 							excepturi exercitationem quasi. In deleniti eaque aut repudiandae
