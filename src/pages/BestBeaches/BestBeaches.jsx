@@ -26,8 +26,7 @@ const BestBeaches = () => {
 							allowFullScreen
 						></iframe>
 					</div>
-					<div className="lg:w-1/2 md:w-1/2 w-[90%]">
-						<h1 className="text-5xl font-bold text-cyan-300">The Best Beaches</h1>
+					
 					<div className="lg:w-1/2 md:w-1/2 w-[80%] pl-[10%]">
 						<h1 className="text-5xl font-bold">The Best Beaches</h1>
 						<p className="py-6">
@@ -43,8 +42,11 @@ const BestBeaches = () => {
 							<span className="text-4xl ml-2"> 500 $</span>{" "}
 							<span>/For person</span>
 						</p>
-						<button className="btn bg-pink-400 text-white border-none rounded-full">Book Now</button>
+						<button className="btn bg-pink-400 text-white border-none rounded-full">
+							Book Now
+						</button>
 					</div>
+					
 				</div>
 			</div>
 		</div>
