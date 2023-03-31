@@ -1,8 +1,5 @@
 import React from "react";
 import HeroSlider, {Slide} from 'hero-slider';
-import image1 from '../../assets/slider/slider_1.jpg'
-import image2 from '../../assets/slider/slider_2.jpg'
-import image3 from '../../assets/slider/slider_3.jpg'
 import './Slider.css'
 
 const Slider = () => {
@@ -11,15 +8,6 @@ const Slider = () => {
         autoplay
         height="70vh"
     >
-      {/* <Overlay>
-        <Wrapper>
-          <Title>Zoom Background Animations</Title>
-          <Subtitle>
-            The <code>backgroundAnimation</code> prop of the <code>Slide</code>{' '}
-            child components is set to <code>zoom</code>.
-          </Subtitle>
-        </Wrapper>
-      </Overlay> */}
       <Slide
         label="Hallstatt - Austria"
         background={{
