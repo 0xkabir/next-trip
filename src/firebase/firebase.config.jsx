@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC5wfSmg6gW1bGaZmbgsWVYjbTW9QXM_z4",
-  authDomain: "nexttrip-d63d2.firebaseapp.com",
-  projectId: "nexttrip-d63d2",
-  storageBucket: "nexttrip-d63d2.appspot.com",
-  messagingSenderId: "18374522356",
-  appId: "1:18374522356:web:348ffc6219ebfab05b75a1"
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
 };
 
 
