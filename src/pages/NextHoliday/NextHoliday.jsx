@@ -1,6 +1,4 @@
 import React from "react";
-// import img from "../../assets/images/beach.jpg";
-// import img2 from "../../assets/images/bot.jpg";
 import img3 from "../../assets/images/city6.jpg";
 
 const NextHoliday = () => {
