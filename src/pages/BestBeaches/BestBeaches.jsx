@@ -26,7 +26,7 @@ const BestBeaches = () => {
 							allowFullScreen
 						></iframe>
 					</div>
-					<div className="lg:w-1/2 md:w-1/2 w-[80%] pl-[10%]">
+					<div className="lg:w-1/2 md:w-1/2 w-[100%] pl-[10%]">
 						<h1 className="text-5xl font-bold">The Best Beaches</h1>
 						<p className="py-6">
 							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
