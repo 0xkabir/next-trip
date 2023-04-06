@@ -6,7 +6,7 @@ const img = "https://images.pexels.com/photos/2397649/pexels-photo-2397649.jpeg?
 const NextFooter = () => {
 	return (
 		<footer
-			style={{ backgroundImage: `url(${img})`,opacity: 0.9}}
+			style={{ backgroundImage: `url(https://images.unsplash.com/photo-1562814830-8286a3397045?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2t5JTIwYmx1ZXxlbnwwfHwwfHw%3D&w=1000&q=80)`,opacity: 0.9}}
 			className="px-4 divide-y bg-[aliceblue] mt-10 py-10 bg-opacity-75"
 		>
 			<div className="py-10 flex flex-wrap justify-between mx-auto w-[80%] lg:text-center">

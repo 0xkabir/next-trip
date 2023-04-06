@@ -1,51 +1,73 @@
 import React from "react";
+
+
 const BestBeaches = () => {
+
 	return (
-		<div className="py-16">
-			<div className="hero">
-				<div className="hero-content mx-auto flex-col lg:flex-row-reverse">
-					<div className="lg:w-1/2 mt-[-60px] mx-auto hidden lg:block">
-						<iframe
-							width="500"
-							height="315"
-							src="https://www.youtube.com/embed/5gOwRpgdzEE"
-							title="YouTube video player"
-							frameBorder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowFullScreen
-						></iframe>
-					</div>
-					<div className="lg:hidden mt-[-60px]">
-						<iframe
-							width="320"
-							height="auto"
-							src="https://www.youtube.com/embed/5gOwRpgdzEE"
-							title="YouTube video player"
-							frameBorder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowFullScreen
-						></iframe>
-					</div>
-					<div className="lg:w-1/2 md:w-1/2 w-[100%] pl-[10%]">
-						<h1 className="text-5xl font-bold">The Best Beaches</h1>
-						<p className="py-6">
-							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-							excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-							et a id nisi.
-						</p>
-						<p className="py-4">
-							{" "}
-							<span className="line-through text-4xl text-slate-300">
-								800{" "}
-							</span>{" "}
-							<span className="text-4xl ml-2"> 500 $</span>{" "}
-							<span>/For person</span>
-						</p>
-						<button className="btn bg-pink-400 text-white border-none rounded-full">
+		<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+			<div className="grid gap-10 lg:grid-cols-2">
+				<div className="lg:pr-10 ">
+					<h5 className="mb-4 text-4xl font-extrabold leading-none">
+						The Best Deal
+					</h5>
+					{/* Description */}
+					<p className="mb-6 text-gray-900">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+						quae explicabo. Sed ut perspiciatis unde omnis iste natus error sit
+						voluptatem totam rem aperiam, eaque ipsa quae explicabo.
+					</p>
+					{/* Price */}
+					<p className="py-4">
+						{" "}
+						<span className="line-through text-4xl text-slate-300">
+							800{" "}
+						</span>{" "}
+						<span className="text-4xl ml-2"> 500 $</span>{" "}
+						<span>/For person</span>
+					</p>
+					<hr className="mb-5 border-gray-300" />
+					{/* Book Now Button */}
+					<div className="flex items-center space-x-4">
+						<button className="btn bg-cyan-400 px-8 hover:bg-cyan-500 text-white border-none rounded-full">
 							Book Now
 						</button>
 					</div>
-					
+				</div>
+				<div className="relative">
+					{/* Right Side Image */}
+					<img
+						className=" object-cover w-full h-56 rounded shadow-lg sm:h-96"
+						src="https://res.cloudinary.com/simpleview/image/upload/v1450117455/clients/norway/unesco-geirangerfjord-skagefla-waterfall-2-1_6cc6a64a-a204-432e-8753-01ef2080f24e.jpg"
+						alt=""
+					/>
+					<div className="mt-[-50px]">
+						<ul className="flex gap-y-2 z-40 flex-wrap items-center justify-center [&>*]:px-12 lg:divide-x">
+							{/* DAYS */}
+							<li className="bg-cyan-400 w-36 text-white p-4 flex-col">
+								<p className="text-center text-3xl">00</p>
+								<p className="capitalize text-center text-sm">DAYS</p>
+							</li>
+
+							{/* HOURS */}
+							<li className="bg-cyan-400 w-36 text-white p-4 flex-col">
+								<p className="mx-auto text-center text-3xl">00</p>
+								<p className="capitalize text-center text-sm">HOURS</p>
+							</li>
+
+							{/* MINUTES */}
+							<li className="bg-cyan-400 w-36 text-white p-4 flex-col">
+								<p className="mx-auto text-center text-3xl">00</p>
+								<p className="capitalize text-center text-sm">MINUTES</p>
+							</li>
+
+							{/* SECONDS */}
+							<li className="bg-cyan-400 w-36 text-white p-4 flex-col">
+								<p className="mx-auto text-center text-3xl">00</p>
+								<p className="capitalize text-center text-sm">SECONDS</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
