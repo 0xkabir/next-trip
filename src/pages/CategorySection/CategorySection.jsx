@@ -10,7 +10,7 @@ const CategorySection = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center">
-                <div className="2xl:mx-auto 2xl:container pb-12 px-4 sm:px-6 xl:px-20 2xl:px-0 w-full">
+                <div className="2xl:mx-auto 2xl:container pb-12 px-0 sm:px-6 xl:px-20 2xl:px-0 w-full">
                     <div className="flex flex-col justify-center items-center space-y-6">
                         <div className="flex flex-col justify-center items-center ">
                             {/* <h1 className="text-3xl xl:text-3xl font-semibold leading-7 xl:leading-9 text-gray-800 dark:text-white my-4">Shop By Category</h1> */}
@@ -18,12 +18,11 @@ const CategorySection = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 gap-6 w-full">
                             {/*Category Beach */}
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[400px] w-full" src="https://www.holidify.com/images/bgImages/BALI.jpg" alt="Bali Image" />
+                                <img className="object-center object-cover h-[330px] w-full" src="https://www.holidify.com/images/bgImages/BALI.jpg" alt="Bali Image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
                                     <h3 className='font-bold pb-1 text-2xl text-white'>Nature</h3>
                                     <p className='text-lg text-white'>6 Packages</p>
                                 </div>
-
                                 {/* Hover Details */}
                                 <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
                                 <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
@@ -39,7 +38,7 @@ const CategorySection = () => {
                             </div>
                             {/* Category Desert */}
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[400px] w-full" src="https://guardian.ng/wp-content/uploads/2018/04/Photo_-Art-of-Safari.jpg" alt="Desert Image" />
+                                <img className="object-center object-cover h-[330px] w-full" src="https://guardian.ng/wp-content/uploads/2018/04/Photo_-Art-of-Safari.jpg" alt="Desert Image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
                                     <h3 className='font-bold pb-1 text-2xl text-white'>Desert</h3>
                                     <p className='text-lg text-white'>2 Packages</p>
@@ -56,7 +55,7 @@ const CategorySection = () => {
                             </div>
                             {/* Category Historical Places */}
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[400px] w-full" src="https://www.deutschland.de/sites/default/files/media/image/AdobeStock_99698574.jpg" alt="Angkor Wat Image" />
+                                <img className="object-center object-cover h-[330px] w-full" src="https://www.deutschland.de/sites/default/files/media/image/AdobeStock_99698574.jpg" alt="Angkor Wat Image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
                                     <h3 className='font-bold pb-1 text-2xl text-white'>Historical Places</h3>
                                     <p className='text-lg text-white'>3 Packages</p>
@@ -74,7 +73,7 @@ const CategorySection = () => {
                             </div>
                             {/* Category Nature */}
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[400px] w-full" src="https://www.holidify.com/images/bgImages/KOH-YAO-NOI.jpg" alt="KOH YAO NOI Image" />
+                                <img className="object-center object-cover h-[330px] w-full" src="https://www.holidify.com/images/bgImages/KOH-YAO-NOI.jpg" alt="KOH YAO NOI Image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
                                     <h3 className='font-bold pb-1 text-2xl text-white'>Islands</h3>
                                     <p className='text-lg text-white'>5 Packages</p>
@@ -94,7 +93,7 @@ const CategorySection = () => {
                             </div>
                             {/* Category Cave */}
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[400px] w-full" src="https://adventures.is/media/226921/anaconda-ice-cave-tunnel-vatnajokull.jpg" alt="Vatnajokull Image" />
+                                <img className="object-center object-cover h-[330px] w-full" src="https://adventures.is/media/226921/anaconda-ice-cave-tunnel-vatnajokull.jpg" alt="Vatnajokull Image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
                                     <h3 className='font-bold pb-1 text-2xl text-white'>Caves & Valleys</h3>
                                     <p className='text-lg text-white'>4 Packages</p>
@@ -113,7 +112,7 @@ const CategorySection = () => {
                             </div>
                             {/* Category Valley */}
                             <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[400px] w-full" src="https://res.cloudinary.com/simpleview/image/upload/v1674650667/clients/norway/New_Project_11__28f603e7-fce9-4bb3-96ec-8500d66f86f1.jpg" alt="Waterfall Image" />
+                                <img className="object-center object-cover h-[330px] w-full" src="https://res.cloudinary.com/simpleview/image/upload/v1674650667/clients/norway/New_Project_11__28f603e7-fce9-4bb3-96ec-8500d66f86f1.jpg" alt="Waterfall Image" />
                                 <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
                                     <h3 className='font-bold pb-1 text-2xl text-white'>Water Falls</h3>
                                     <p className='text-lg text-white'>3 Packages</p>

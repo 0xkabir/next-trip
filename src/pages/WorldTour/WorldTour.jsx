@@ -2,8 +2,7 @@ import React from "react";
 
 const WorldTour = () => {
 	return (
-		
-		<div className="lg:w-[80%] w-[90%] mx-auto my-5">
+		<div className="lg:w-[80%] w-[90%] mx-auto">
 			<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
 				<div className="bg-white rounded-md">
 					<div className="card-body">
