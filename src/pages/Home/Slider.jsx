@@ -9,7 +9,7 @@ const Slider = () => {
 
       <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold mb-2 bg-clip-text bg-gradient-to-r"><span className="text-white">Search your next</span> <span className="underline text-cyan-400"><span className="text-white">Holiday</span></span></h1>
 
-      <p className="text-gray-700 my-8 text-white text-2xl">Check Our Best Deals...</p>
+      <p className="my-8 text-white text-2xl">Check Our Best Deals...</p>
 
       <div className="w-11/12 md:w-80 lg:w-96 mx-auto mb-8">
         <div className="relative flex items-center">
