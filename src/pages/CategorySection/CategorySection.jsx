@@ -1,6 +1,81 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+const Categories = [
+    {
+        id: 1,
+        img: 'https://www.holidify.com/images/bgImages/BALI.jpg',
+        categoryName: "Beach",
+        availablePackageQuantity: 6,
+        availablePackagePlaceName: [
+            "Shimla",
+            "Maldives",
+            "Cappadocia",
+            "Avenue of the Baobabs",
+            "Arashiyama Bamboo Grove",
+            "Torres Del Paine National Park",
+        ]
+    },
+    {
+        id: 2,
+        img: 'https://guardian.ng/wp-content/uploads/2018/04/Photo_-Art-of-Safari.jpg',
+        categoryName: "Desert",
+        availablePackageQuantity: 2,
+        availablePackagePlaceName: [
+            "Sossusvlei, Namibia",
+            "Sossusvlei, Namibia",
+        ]
+    },
+    {
+        id: 3,
+        img: 'https://www.deutschland.de/sites/default/files/media/image/AdobeStock_99698574.jpg',
+        categoryName: "Historical Places",
+        availablePackageQuantity: 3,
+        availablePackagePlaceName: [
+            "Bali",
+            "Angkor Wat",
+            "Machu Pichu",
+        ]
+    },
+    {
+        id: 4,
+        img: 'https://www.holidify.com/images/bgImages/KOH-YAO-NOI.jpg',
+        categoryName: "Islands",
+        availablePackageQuantity: 5,
+        availablePackagePlaceName: [
+            "Maldives",
+            "Bora Bora",
+            "Koh Yao Nai",
+            "Phi Phi Islands",
+            "Raja Ampat Islands",
+        ]
+    },
+    {
+        id: 5,
+        img: 'https://adventures.is/media/226921/anaconda-ice-cave-tunnel-vatnajokull.jpg',
+        categoryName: "Caves & Valleys",
+        availablePackageQuantity: 4,
+        availablePackagePlaceName: [
+            "Antelope Canyon",
+            "Geiranger Fjord",
+            "Vatnajokull Ice Caves",
+            "Torres Del Paine National Park",
+        ]
+    },
+    {
+        id: 6,
+        img: 'https://res.cloudinary.com/simpleview/image/upload/v1674650667/clients/norway/New_Project_11__28f603e7-fce9-4bb3-96ec-8500d66f86f1.jpg',
+        categoryName: "Water Falls",
+        availablePackageQuantity: 3,
+        availablePackagePlaceName: [
+            "Victoria Falls",
+            "Niagara Falls",
+            "Vatnajokull Ice Caves",
+        ]
+    }
+]
+
 const CategorySection = () => {
     return (
         <div className='p-8'>
@@ -17,117 +92,29 @@ const CategorySection = () => {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 gap-6 w-full">
                             {/*Category Beach */}
-                            <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[330px] w-full" src="https://www.holidify.com/images/bgImages/BALI.jpg" alt="Bali Image" />
-                                <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl text-white'>Nature</h3>
-                                    <p className='text-lg text-white'>6 Packages</p>
-                                </div>
-                                {/* Hover Details */}
-                                <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
-                                <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
-                                    <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
-                                    <p className='text-sm mb-1 text-white'>Shimla</p>
-                                    <p className='text-sm mb-1 text-white'>Maldives</p>
-                                    <p className='text-sm mb-1 text-white'>Cappadocia</p>
-                                    <p className='text-sm mb-1 text-white'>Avenue of the Baobabs</p>
-                                    <p className='text-sm mb-1 text-white'>Arashiyama Bamboo Grove</p>
-                                    <p className='text-sm mb-1 text-white'>Torres Del Paine National Park</p>
-                                    <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
-                                </div>
-                            </div>
-                            {/* Category Desert */}
-                            <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[330px] w-full" src="https://guardian.ng/wp-content/uploads/2018/04/Photo_-Art-of-Safari.jpg" alt="Desert Image" />
-                                <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl text-white'>Desert</h3>
-                                    <p className='text-lg text-white'>2 Packages</p>
-                                </div>
-
-                                {/* Hover Details */}
-                                <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
-                                <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
-                                    <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
-                                    <p className='text-sm mb-1 text-white'>Sossusvlei, Namibia</p>
-                                    <p className='text-sm mb-1 text-white'>Pyramids of Giza</p>
-                                    <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
-                                </div>
-                            </div>
-                            {/* Category Historical Places */}
-                            <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[330px] w-full" src="https://www.deutschland.de/sites/default/files/media/image/AdobeStock_99698574.jpg" alt="Angkor Wat Image" />
-                                <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl text-white'>Historical Places</h3>
-                                    <p className='text-lg text-white'>3 Packages</p>
-                                </div>
-
-                                {/* Hover Details */}
-                                <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
-                                <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
-                                    <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
-                                    <p className='text-sm mb-1 text-white'>Bali</p>
-                                    <p className='text-sm mb-1 text-white'>Angkor Wat</p>
-                                    <p className='text-sm mb-1 text-white'>Machu Pichu</p>
-                                    <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
-                                </div>
-                            </div>
-                            {/* Category Nature */}
-                            <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[330px] w-full" src="https://www.holidify.com/images/bgImages/KOH-YAO-NOI.jpg" alt="KOH YAO NOI Image" />
-                                <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl text-white'>Islands</h3>
-                                    <p className='text-lg text-white'>5 Packages</p>
-                                </div>
-
-                                {/* Hover Details */}
-                                <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
-                                <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
-                                    <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
-                                    <p className='text-sm mb-1 text-white'>Maldives</p>
-                                    <p className='text-sm mb-1 text-white'>Bora Bora</p>
-                                    <p className='text-sm mb-1 text-white'>Koh Yao Nai</p>
-                                    <p className='text-sm mb-1 text-white'>Phi Phi Islands</p>
-                                    <p className='text-sm mb-1 text-white'>Raja Ampat Islands</p>
-                                    <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
-                                </div>
-                            </div>
-                            {/* Category Cave */}
-                            <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[330px] w-full" src="https://adventures.is/media/226921/anaconda-ice-cave-tunnel-vatnajokull.jpg" alt="Vatnajokull Image" />
-                                <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl text-white'>Caves & Valleys</h3>
-                                    <p className='text-lg text-white'>4 Packages</p>
-                                </div>
-
-                                {/* Hover Details */}
-                                <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
-                                <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
-                                    <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
-                                    <p className='text-sm mb-1 text-white'>Antelope Canyon</p>
-                                    <p className='text-sm mb-1 text-white'>Geiranger Fjord</p>
-                                    <p className='text-sm mb-1 text-white'>Vatnajokull Ice Caves</p>
-                                    <p className='text-sm mb-1 text-white'>Torres Del Paine National Park</p>
-                                    <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
-                                </div>
-                            </div>
-                            {/* Category Valley */}
-                            <div className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
-                                <img className="object-center object-cover h-[330px] w-full" src="https://res.cloudinary.com/simpleview/image/upload/v1674650667/clients/norway/New_Project_11__28f603e7-fce9-4bb3-96ec-8500d66f86f1.jpg" alt="Waterfall Image" />
-                                <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
-                                    <h3 className='font-bold pb-1 text-2xl text-white'>Water Falls</h3>
-                                    <p className='text-lg text-white'>3 Packages</p>
-                                </div>
-
-                                {/* Hover Details */}
-                                <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
-                                <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
-                                    <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
-                                    <p className='text-sm mb-1 text-white'>Victoria Falls</p>
-                                    <p className='text-sm mb-1 text-white'>Niagara Falls</p>
-                                    <p className='text-sm mb-1 text-white'>Vatnajokull Ice Caves</p>
-                                    <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
-                                </div>
-                            </div>
+                            {
+                                Categories.map((category, i) => (
+                                    <div key={category.id}
+                                        className="shadow-md duration-500 hover:scale-105 hover:shadow-xl relative group opacity-90 flex justify-center items-center h-full w-full">
+                                        <img className="object-center object-cover h-[330px] w-full" src={category.img} alt="Bali Image" />
+                                        <div className="dark:text-white left-8 bottom-4 z-10 absolute leading-none text-gray-800 py-3 w-36">
+                                            <h3 className='font-bold pb-1 text-2xl text-white'>{category.categoryName}</h3>
+                                            <p className='text-lg text-white'>{category.availablePackageQuantity} Packages</p>
+                                        </div>
+                                        {/* Hover Details */}
+                                        <div className="absolute opacity-0 group-hover:opacity-100  group-hover:divider-cyan-300 transition duration-700 bottom-3 py-6 z-0 px-20 w-36"></div>
+                                        <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-10 group-hover:bottom-0 z-20 group-hover:bg-cyan-500 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                                            <h3 className="text-white text-2xl font-semibold py-4 px-5">Packages</h3>
+                                            {
+                                                category.availablePackagePlaceName.map((name, i) => (
+                                                    <p key={i} className='text-sm mb-1 text-white'>{name}</p>
+                                                ))
+                                            }
+                                            <Link to='/productDetails' className="bg-white mt-4 hover:text-cyan-500 text-cyan-500 text-[12px] rounded-3xl py-2 px-5">VIEW DESTINATIONS</Link>
+                                        </div>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>

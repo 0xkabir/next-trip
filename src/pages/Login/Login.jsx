@@ -1,12 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../../assets/images/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { useDispatch, useSelector } from 'react-redux';
+import { facebookLogin, googleLogin, loginUser } from '../../Features/Authentication/AuthSlice';
+import { toast } from 'react-hot-toast';
 
 const Login = () => {
 
+    const navigate = useNavigate();
+
+    // React Hook Form 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
-    const handleSignIn = (data) => console.log(data);
+
+    // Dispatch 
+    const dispatch = useDispatch();
+
+    // Getting IsLoading & Email info 
+    const { isLoading, email } = useSelector((state) => state.auth);
+
+    // Handle SignIn 
+    const handleSignIn = ({ email, password }) => {
+        dispatch(loginUser({ email, password }))
+    };
+
+    // Handle Google Login 
+    const handleGoogleLogin = () => {
+        dispatch(googleLogin());
+    }
+
+    // Handle Facebook Login 
+    const handleFacebookLogin = () => {
+        dispatch(facebookLogin());
+    }
+
+    // Resetting form giving a success message via react-hot-toast and navigating to home page 
+    useEffect(() => {
+        if (!isLoading && email) {
+            reset();
+            toast.success(`Welcome Back`);
+            navigate('/');
+        }
+    }, [isLoading, email]);
+
 
     return (
         <main className="lg:my-8 w-full h-screen flex flex-col items-center justify-center bg-white sm:px-4">
@@ -22,11 +58,11 @@ const Login = () => {
                 <div className="bg-white shadow p-4 py-6 space-y-8 sm:p-6 sm:rounded-lg">
                     <div className="grid grid-cols-3 gap-x-3">
                         {/* Sign In Button For Google  */}
-                        <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+                        <button onClick={handleGoogleLogin} className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
                             <img className="w-5 h-5" src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="" />
                         </button>
                         {/* Sign In Button For Facebook  */}
-                        <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+                        <button onClick={handleFacebookLogin} className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
                             <img className="w-5 h-5" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="" />
                         </button>
                         {/* Sign In Button For Github  */}

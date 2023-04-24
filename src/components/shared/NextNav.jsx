@@ -1,13 +1,29 @@
 import React, { useEffect, useRef, useState } from "react";
 import logo from '../../assets/images/Logo.png';
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { signOut } from "firebase/auth";
+import auth from "../../firebase/firebase.config";
+import { logOut } from "../../Features/Authentication/AuthSlice";
 
 const NextNav = () => {
 
+  // Auth Data 
+  const { email } = useSelector((state) => state.auth);
+
+  const dispatch = useDispatch();
+
+  const handleLogOut = () => {
+    signOut(auth).then(() => {
+      dispatch(logOut());
+    })
+  }
+
+  // Profile Dropdown 
   const ProfileDropDown = (props) => {
 
-    const [state, setState] = useState(false)
-    const profileRef = useRef()
+    const [state, setState] = useState(false);
+    const profileRef = useRef();
 
     const navigation = [
       { title: "Dashboard", path: "/" },
@@ -18,7 +34,7 @@ const NextNav = () => {
 
     useEffect(() => {
       const handleDropDown = (e) => {
-        if (!profileRef.current.contains(e.target)) setState(false)
+        if (!profileRef?.current?.contains(e.target)) setState(false)
       }
       document.addEventListener('click', handleDropDown)
     }, [])
@@ -56,18 +72,16 @@ const NextNav = () => {
 
   const [menuState, setMenuState] = useState(false)
 
-  // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "Home", path: "/" },
     { title: "Explore Tours", path: "/" },
     { title: "Blogs", path: "/" },
     { title: "Upcoming Events", path: "/" },
     { title: "Gallery", path: "/" },
-    { title: "Sing Up", path: "/signUp" },
+    { title: "Sign Up", path: "/signUp" },
   ]
 
   return (
-
     <nav className="bg-[aliceblue] border-b">
       <div className="flex items-center space-x-8 py-3 px-4 max-w-screen-xl mx-auto md:px-8">
         <div className="flex-none lg:flex-initial">
@@ -93,6 +107,26 @@ const NextNav = () => {
                     </Link>
                   </li>
                 ))
+              }
+              {/* Login & Log Out */}
+              {
+                email ?
+                  <li className="text-gray-600 hover:text-gray-900">
+                    <Link
+                      onClick={handleLogOut}
+                      className="text-gray-600 font-light hover:text-gray-900"
+                      to=''>
+                      Log Out
+                    </Link>
+                  </li>
+                  :
+                  <li className="text-gray-600 hover:text-gray-900">
+                    <Link
+                      className="text-gray-600 font-light hover:text-gray-900"
+                      to='/login'>
+                      Login
+                    </Link>
+                  </li>
               }
             </ul>
             <ProfileDropDown

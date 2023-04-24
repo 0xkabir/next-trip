@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SignUp.css';
 import { useForm } from 'react-hook-form';
 import logo from '../../assets/images/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { createUser, googleLogin } from '../../Features/Authentication/AuthSlice';
+import { toast } from 'react-hot-toast';
 
 const SignUp = () => {
 
+    // React Hook Form 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
-    const handleSignUp = (data) => console.log(data);
+
+    // Dispatch 
+    const dispatch = useDispatch();
+
+    // Handle SignUp
+    const handleSignUp = ({ username, email, password }) => {
+        console.log(username, email, password);
+        dispatch(createUser({
+            email: email,
+            password: password,
+        }));
+    };
+
+    // Handle Google Login 
+    const handleGoogleLogin = () => {
+        dispatch(googleLogin());
+    };
 
     return (
 
@@ -56,7 +76,7 @@ const SignUp = () => {
                     </div>
                     <div className="grid grid-cols-3 gap-x-3">
                         {/* Sign Up Button For Google  */}
-                        <button className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
+                        <button onClick={handleGoogleLogin} className="flex items-center justify-center py-2.5 border rounded-lg hover:bg-gray-50 duration-150 active:bg-gray-100">
                             <img className="w-5 h-5" src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="" />
                         </button>
                         {/* Sign Up Button For Facebook  */}
